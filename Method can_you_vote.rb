@@ -1,8 +1,7 @@
 # Exercice "Can you vote?"
-
 puts "Please enter your age here:"
-age = gets.chomp
-age = age.to_i
+user_age = gets.chomp
+user_age = user_age.to_i
 
 def can_you_vote(age)
     if age >= 18
@@ -11,5 +10,4 @@ def can_you_vote(age)
         return false
     end
 end
-
-can_you_vote(age)
+can_you_vote(user_age)
